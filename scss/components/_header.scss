@@ -1,0 +1,94 @@
+@import "mixins";
+
+.header {
+  margin: 0 auto;
+  min-width: 100vw;
+  padding: 0 24px;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: flex;
+  min-width: 144px;
+}
+
+.header__menu {
+  @include styleHeader;
+  padding: 16px 0;
+}
+
+.header__btn {
+  @include styleHeader;
+  padding: 12px 24px;
+  gap: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: $bgBtn;
+  color: $colorTextBtn;
+  span {
+    padding-right: 24px;
+  }
+}
+
+.header__search {
+  min-width: 100%;
+  @include styleHeader;
+  border-radius: 8px;
+  border: 1px solid $colorBorder;
+  padding: 10px 16px;
+  justify-content: space-between;
+
+  input[type="text"] {
+    border: none;
+  }
+
+  ::-webkit-input-placeholder {
+    color: #050d23;
+  }
+}
+
+.header__search-icons {
+  @include styleHeader;
+  gap: 12px;
+}
+
+.header__icons {
+  @include styleHeader;
+  gap: 24px;
+
+  img {
+    min-width: 32px;
+  }
+}
+
+.header__line {
+  width: 1px;
+  height: 48px;
+  background-color: $colorBorder;
+}
+.header__backet {
+  @include styleHeader;
+  padding: 12px 24px;
+  gap: 12px;
+  min-width: 148px;
+  background-color: $bgColorLightBlue;
+  border-radius: 8px;
+}
+.header__price {
+  white-space: nowrap;
+}
+.header__account {
+  @include styleHeader;
+  gap: 16px;
+  min-width: 169px;
+}
+.header__account-name {
+  white-space: nowrap;
+}
