@@ -1,0 +1,227 @@
+.card {
+}
+
+.container {
+}
+
+.card__nav {
+  margin-bottom: 24px;
+}
+
+.card__title {
+  margin-bottom: 32px;
+}
+
+.card__about {
+  display: flex;
+  gap: 48px;
+}
+
+.card__img {
+  min-width: 400px;
+  img {
+    border-radius: 24px;
+  }
+}
+
+.wrapper__content {
+
+}
+
+.wrapper__inner {
+  display: flex;
+  gap: 48px;
+  flex-wrap: nowrap;
+}
+
+.card__content {
+  min-width: 372px;
+}
+
+.card__numbers {
+  padding-top: 24px;
+  margin-bottom: 42px;
+}
+
+.card__value {
+  display: flex;
+  align-items: center;
+  gap: 68px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid $colorBorder;
+}
+
+.wrapper {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.card__fullPrice {
+  margin-bottom: 24px;
+  color: $redColorText;
+}
+
+.card__price {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.card__sale {
+  padding: 5.5px 8px;
+  background-color: $redColorText;
+  color: white;
+  border-radius: 4px;
+}
+
+.card__boxes {
+  padding: 8px;
+  color: $checkBoxColor;
+  background-color: #f2f5f9;
+  border-radius: 8px;
+  line-height: 16px;
+}
+
+.card__checkbox {
+  display: inline-block;
+}
+
+.card__input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.card__checkBtn {
+  display: inline-block;
+  position: relative;
+  font-size: 18px;
+  line-height: 16px;
+}
+
+.card__checkBtn::before {
+  content: "";
+  position: absolute;
+  left: -52px;
+  top: -4px;
+  width: 40px;
+  height: 24px;
+  background-color: $bgBtn;
+  border-radius: 32px;
+  transition: all 0.3s;
+}
+
+.card__checkBtn::after {
+  content: "";
+  position: absolute;
+  left: -34px;
+  top: -2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  transition: all 0.3s;
+}
+
+.card__input:checked + .card__checkBtn::before {
+  background-color: $checkBoxColor;
+}
+
+.card__input:checked + .card__checkBtn::after {
+  left: -50px;
+}
+
+.card__delivery {
+  padding-top: 32px;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+// .card__input:focus + .card__checkBtn::before {
+//   scale: 1.1;
+// }
+
+.card__buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  height: 56px;
+}
+
+.card__btn-basket {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  justify-content: center;
+  border-radius: 8px;
+  border: none;
+  color: $colorTextBtn;
+  background-color: $bgBtn;
+}
+
+.card__btn-heart {
+  min-width: 72px;
+  border-radius: 8px;
+  border: none;
+  background-color: $bgColorLightBlue;
+}
+
+.card__line {
+  margin: 24px 0 45px;
+  width: 1px;
+  background-color: $colorBorder;
+}
+
+.characteristics {
+  padding-top: 24px;
+}
+
+.characteristics__title {
+  margin-bottom: 32px;
+}
+
+.characteristics__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.characteristics__data {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 302px;
+}
+
+.characteristics__info {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  color: $darkColorText
+}
+
+.description {
+
+}
+
+.description__title {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 24px;
+  color: $darkColorText;
+}
+
+.description__text {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 1.1px;
+}
+
+.characteristics__text-color {
+  font-size: 12px;
+  line-height: 16px;
+  color: $grayColorText;
+}

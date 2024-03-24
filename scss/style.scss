@@ -3,6 +3,7 @@
 @import "components/mixins";
 @import "components/header";
 @import "components/nav";
+@import "components/card";
 
 @font-face {
   font-family: "GothamPro";
@@ -12,3 +13,11 @@
 body {
   font-family: "GothamPro", Georgia, "Times New Roman", Times, serif;
 }
+
+.container {
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+
