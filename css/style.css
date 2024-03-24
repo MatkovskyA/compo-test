@@ -39,17 +39,19 @@ a {
 }
 
 .header {
-  margin: 0 auto;
-  min-width: 100vw;
-  padding: 0 24px;
+  margin: 0 auto 32px;
+  min-width: 1680px;
 }
 
 .header__content {
+  width: 100%;
   display: flex;
   flex-direction: row;
   gap: 24px;
+  padding: 0 24px;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #E2E4F0;
 }
 
 .header__logo {
@@ -78,7 +80,7 @@ a {
 }
 
 .header__search {
-  min-width: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   border-radius: 8px;
@@ -114,7 +116,7 @@ a {
   background-color: #E2E4F0;
 }
 
-.header__backet {
+.header__basket {
   display: flex;
   align-items: center;
   padding: 12px 24px;
@@ -137,4 +139,58 @@ a {
 
 .header__account-name {
   white-space: nowrap;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  border-bottom: 1px solid #E2E4F0;
+}
+
+.nav__links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav__link {
+  color: #071435;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.nav__items {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav__btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #F2F6FF;
+  color: #1551E5;
+}
+
+.nav__link-promo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #1551E5;
+}
+
+.nav__link-blog {
+  color: #1551E5;
+}
+
+@font-face {
+  font-family: "GothamPro";
+  src: url(../resources/fonts/GothaProMed.otf) format("opentype");
+}
+body {
+  font-family: "GothamPro", Georgia, "Times New Roman", Times, serif;
 }/*# sourceMappingURL=style.css.map */

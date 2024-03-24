@@ -1,6 +1,42 @@
 .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  border-bottom: 1px solid $colorBorder;
 }
+
 .nav__links {
+  display: flex;
+  gap: 24px;
 }
+
+.nav__link {
+  color: $darkColorText;
+  font-size: 14px;
+  line-height: 16px;
+}
+
 .nav__items {
+  @include styleHeader;
+  gap: 24px;
+}
+
+.nav__btn {
+  @include styleHeader;
+  gap: 8px;
+  padding: 8px 12px;
+  border: none;
+  background-color: $bgColorLightBlue;
+  color: $bgBtn;
+}
+
+.nav__link-promo {
+  @include styleHeader;
+  gap: 16px;
+  color: $bgBtn;
+}
+
+.nav__link-blog {
+  color: $bgBtn;
 }
