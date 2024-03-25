@@ -26,6 +26,10 @@
   padding: 16px 0;
 }
 
+.header__input {
+  width: 100%;
+}
+
 .header__btn {
   @include styleHeader;
   padding: 12px 24px;
@@ -55,6 +59,10 @@
     color: #050d23;
   }
 }
+
+// .header__search:focus {
+//   border: 1px solid $bgBtn;
+// }
 
 .header__search-icons {
   @include styleHeader;
