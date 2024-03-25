@@ -12,34 +12,35 @@
   <header class="header">
     <div class="header__content">
       <div class="header__logo">
-        <img src="./resources/header/Brand.svg" alt="Logotype">
+        <a href="#!"><img src="./resources/header/Brand.svg" alt="Logotype"></a>
       </div>
       <div class="header__menu">
-        <button class="header__btn">
+        <button class="header__btn shadow">
           <img src="./resources/header/Icon.svg" alt="Icon">
           <span>Меню</span>
         </button>
       </div>
       <div class="header__search">
         <input class="header__input" type="text" name="search" id="" placeholder="Название запроса">
-        <div class="header__search-icons">
-          <img src="./resources/header/Icon1.svg" alt="Icon-close">
-          <img src="./resources/header/Icon2.svg" alt="Icon-search">
+        <div class="header__btns">
+          <button class="header__btns-img"><img src="./resources/header/Icon1.svg" alt="Icon-close"></button>
+          <button class="header__btns-img"><img src="./resources/header/Icon2.svg" alt="Icon-search"></button>
         </div>
       </div>
       <div class="header__icons">
         <a href="#!"><img src="./resources/header/Icon3.svg" alt="Icon"></a>
         <span class="header__line"></span>
-        <a href="#!"><img src="./resources/header/Icon4.svg" alt="Icon"></a>
+        <div class="header__icon-color">
+          <a href="#!"><img src="./resources/header/Icon4.svg" alt=""></a>
+        </div>
       </div>
-      <div class="header__basket">
-        <img src="./resources/header/Icon5.svg" alt="Icon-basket">
-        <p class="header__price">144 235₽</p>
+      <div class="header__basket lightShadow">
+        <a class="header__price " href="#!"><img src="./resources/header/Icon5.svg" alt="Icon-basket">144 235 ₽</a>
       </div>
       <div class="header__account">
         <img src="./resources/header/Avatar.svg" alt="Icon-Avatar">
         <p class="header__account-name">Ермаков Е.</p>
-        <img src="./resources/header/Icon6.svg" alt="Icon-arrow">
+        <button class="header__btns-img width"><img src="./resources/header/Icon6.svg" alt="Icon-arrow"></button>
       </div>
     </div>
     <nav class="nav">
@@ -50,7 +51,7 @@
         <li><a class="nav__link" href="#!">Обращения</a></li>
       </ul>
       <div class="nav__items">
-        <button class="nav__btn"><img src="./resources/header/Icon7.svg" alt="Message-Icon">Ваш менеджер</button>
+        <button class="nav__btn lightShadow"><img src="./resources/header/Icon7.svg" alt="Message-Icon">Ваш менеджер</button>
         <a class="nav__link-promo" href="#!"><img src="./resources/header/Icon8.svg" alt="Percent-Icon">Акции</a>
         <a class="nav__link-blog" href="#!">Блог</a>
       </div>
@@ -104,12 +105,12 @@
                     </div>
                   </div>
                   <div class="card__buttons">
-                    <button class="card__btn-basket">
+                    <button class="card__btn-basket shadow">
                       <img src="./resources/main/basket.svg" alt="Basket">
                       <span>В корзину</span>
                     </button>
-                    <button class="card__btn-heart">
-                      <img src="./resources/main/heart.svg" alt="Like">
+                    <button class="card__btn-heart lightShadow">
+                      <img id="image" src="./resources/main/heart.svg" alt="Like">
                     </button>
                   </div>
                 </div>
@@ -189,7 +190,7 @@
           <a class="footer__link-color" href="#!">Вакансии</a>
           <a class="footer__link-color" href="#!">Блог</a>
           <a class="footer__link-color" href="#!">Акции</a>
-          <button class="footer__btn">Предложить идею</button>
+          <button class="footer__btn lightShadow">Предложить идею</button>
         </div>
       </div>
       <div class="footer__items">
@@ -262,6 +263,7 @@
     </div>
   </footer>
 
+  <script src="index.js"></script>
 </body>
 
 </html>

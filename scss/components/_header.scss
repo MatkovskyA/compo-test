@@ -47,12 +47,18 @@
   width: 100%;
   @include styleHeader;
   border-radius: 8px;
-  border: 1px solid $colorBorder;
   padding: 10px 16px;
   justify-content: space-between;
+  position: relative;
 
   input[type="text"] {
-    border: none;
+    border: 1px solid $colorBorder;
+    padding: 16px 16px;
+    border-radius: 8px;
+  }
+
+  input[type="text"]:focus {
+    border: 1px solid $bgBtn;
   }
 
   ::-webkit-input-placeholder {
@@ -64,9 +70,16 @@
 //   border: 1px solid $bgBtn;
 // }
 
-.header__search-icons {
+.header__btns {
   @include styleHeader;
+  position: absolute;
+  right: 30px;
   gap: 12px;
+}
+
+.header__btns-img {
+  border: none;
+  background-color: white;
 }
 
 .header__icons {
@@ -83,6 +96,7 @@
   height: 48px;
   background-color: $colorBorder;
 }
+
 .header__basket {
   @include styleHeader;
   padding: 12px 24px;
@@ -91,14 +105,23 @@
   background-color: $bgColorLightBlue;
   border-radius: 8px;
 }
+
 .header__price {
+  @include styleHeader;
+  color: $bgBtn;
+  gap: 8px;
   white-space: nowrap;
 }
+
 .header__account {
   @include styleHeader;
   gap: 16px;
   min-width: 169px;
 }
+
 .header__account-name {
   white-space: nowrap;
+  font-size: 14px;
 }
+
+

@@ -1,3 +1,5 @@
+@import "variables";
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -34,23 +36,3 @@ img {
   height: auto;
 }
 
-a {
-  text-decoration: none;
-}
-
-input:focus {
-  // outline: none;
-  border-color: red;
-}
-
-input:focus .header__search {
-  border: 1px solid $bgBtn;
-}
-
-input:focus::placeholder {
-  display: none;
-}
-
-input:focus::-webkit-input-placeholder {
-  color: transparent;
-}
