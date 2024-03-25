@@ -1,11 +1,9 @@
-.card {
-}
-
-.container {
-}
-
-.card__nav {
+.card__links {
   margin-bottom: 24px;
+}
+
+.card__link {
+  color: $grayColorText;
 }
 
 .card__title {
@@ -15,6 +13,8 @@
 .card__about {
   display: flex;
   gap: 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid $colorBorder;
 }
 
 .card__img {
@@ -22,10 +22,6 @@
   img {
     border-radius: 24px;
   }
-}
-
-.wrapper__content {
-
 }
 
 .wrapper__inner {
@@ -139,9 +135,6 @@
   gap: 16px;
   margin-bottom: 32px;
 }
-// .card__input:focus + .card__checkBtn::before {
-//   scale: 1.1;
-// }
 
 .card__buttons {
   display: flex;
@@ -200,11 +193,7 @@
   font-size: 14px;
   font-weight: bold;
   line-height: 16px;
-  color: $darkColorText
-}
-
-.description {
-
+  color: $darkColorText;
 }
 
 .description__title {

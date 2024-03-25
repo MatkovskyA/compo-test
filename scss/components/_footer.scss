@@ -1,0 +1,109 @@
+.footer__nav {
+  @include styleHeader;
+  justify-content: space-between;
+  padding: 48px 0;
+  border-bottom: 1px solid $colorBorder;
+}
+.footer__contacts {
+  @include styleHeader;
+  gap: 48px;
+}
+.footer__logo {
+  margin-right: 56px;
+}
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__contact-color {
+  font-size: 16px;
+  font-weight: bold;
+  color: $darkColorText;
+}
+
+.footer__contact-weight {
+  font-size: 12px;
+  line-height: 16px;
+  color: $grayColorText;
+}
+
+.footer__links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.footer__link-color {
+  color: $darkColorText;
+}
+.footer__btn {
+  padding: 16px 24px;
+  border: none;
+  background-color: $bgColorLightBlue;
+  color: $bgBtn;
+  border-radius: 8px;
+}
+
+.footer__items {
+  display: flex;
+  gap: 24px;
+  padding: 48px 0;
+  border-bottom: 1px solid $colorBorder;
+}
+
+.footer__content {
+  min-width: 370px;
+  ul li {
+    padding-bottom: 16px;
+
+    a {
+      color: $darkColorText;
+      font-size: 14px;
+    }
+  }
+}
+
+.footer__title {
+  margin-bottom: 24px;
+}
+
+.footer__additionally {
+  padding: 48px 0;
+  color: $grayColorText;
+
+  a {
+    color: $grayColorText;
+  }
+}
+
+.footer__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  margin-bottom: 40px;
+}
+
+.footer__politic {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.footer__develop {
+  @include styleHeader;
+  justify-content: center;
+  gap: 24px;
+  
+}
+
+.footer__info-link {
+  @include styleHeader;
+  gap: 8px;
+}
+
+.footer__info-link-color {
+  @include styleHeader;
+  gap: 8px;
+  color: $bgBtn !important;
+}

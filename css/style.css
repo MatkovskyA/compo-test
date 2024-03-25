@@ -187,8 +187,12 @@ a {
   color: #1551E5;
 }
 
-.card__nav {
+.card__links {
   margin-bottom: 24px;
+}
+
+.card__link {
+  color: #828EAD;
 }
 
 .card__title {
@@ -198,6 +202,8 @@ a {
 .card__about {
   display: flex;
   gap: 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #E2E4F0;
 }
 
 .card__img {
@@ -396,6 +402,123 @@ a {
   font-size: 12px;
   line-height: 16px;
   color: #828EAD;
+}
+
+.footer__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px 0;
+  border-bottom: 1px solid #E2E4F0;
+}
+
+.footer__contacts {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.footer__logo {
+  margin-right: 56px;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__contact-color {
+  font-size: 16px;
+  font-weight: bold;
+  color: #071435;
+}
+
+.footer__contact-weight {
+  font-size: 12px;
+  line-height: 16px;
+  color: #828EAD;
+}
+
+.footer__links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.footer__link-color {
+  color: #071435;
+}
+
+.footer__btn {
+  padding: 16px 24px;
+  border: none;
+  background-color: #F2F6FF;
+  color: #1551E5;
+  border-radius: 8px;
+}
+
+.footer__items {
+  display: flex;
+  gap: 24px;
+  padding: 48px 0;
+  border-bottom: 1px solid #E2E4F0;
+}
+
+.footer__content {
+  min-width: 370px;
+}
+.footer__content ul li {
+  padding-bottom: 16px;
+}
+.footer__content ul li a {
+  color: #071435;
+  font-size: 14px;
+}
+
+.footer__title {
+  margin-bottom: 24px;
+}
+
+.footer__additionally {
+  padding: 48px 0;
+  color: #828EAD;
+}
+.footer__additionally a {
+  color: #828EAD;
+}
+
+.footer__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  margin-bottom: 40px;
+}
+
+.footer__politic {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.footer__develop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.footer__info-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer__info-link-color {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #1551E5 !important;
 }
 
 @font-face {
