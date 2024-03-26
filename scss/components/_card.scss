@@ -208,6 +208,29 @@
   font-size: 14px;
 }
 
+.card__buttons-hidden {
+  display: none;
+}
+
+.card__buttons-visible {
+  display: flex;
+}
+
+.card__buttons-caunt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 12px;
+  min-width: 284px;
+  border: 1px solid $bgBtn;
+  border-radius: 8px;
+  background-color: white;
+  color: $textColorFooter;
+  font-family: "Gotham-Medium";
+  font-size: 14px;
+}
+
 .card__buttons-heart {
   min-width: 72px;
   border-radius: 8px;

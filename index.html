@@ -34,9 +34,9 @@
           <a href="#!"><img src="./resources/header/Icon4.svg" alt=""></a>
         </div>
       </div>
-      <div class="header__basket lightShadow">
-        <a class="header__price" href="#!"><img src="./resources/header/Icon5.svg" alt="Icon-basket">144 235<span class="header__ruble">P</span></a>
-      </div>
+      <button class="header__basket lightShadow"><img src="./resources/header/Icon5.svg" alt="Icon-basket">144 235<span class="header__ruble">P</span>
+        <!-- <a class="header__price" href="#!"></a> -->
+      </button>
       <div class="header__account">
         <img src="./resources/header/Avatar.svg" alt="Icon-Avatar">
         <p class="header__account-name">Ермаков Е.</p>
@@ -119,10 +119,20 @@
                       <img src="./resources/main/basket.svg" alt="Basket">
                       <span>В корзину</span>
                     </button>
+                  <button class="card__buttons-hidden shadow" id="counter-btn">
+                    <img class="card__button-minus" id="minus" src="./resources/main/minus.svg" alt="">
+                    <span id="counter">1 штук</span>
+                    <img class="card__button-plus" id="plus" src="./resources/main/plus.svg" alt="">
+                  </button>
                     <button class="card__buttons-heart lightShadow">
                       <img id="image" src="./resources/main/heart.svg" alt="Like">
                     </button>
                   </div>
+                  <!-- <button class="card__buttons-caunt shadow" id="basket-btn">
+                    <img class="card__button-minus" src="./resources/main/minus.svg" alt="">
+                    <span >0 штук</span>
+                    <img class="card__button-plus" src="./resources/main/plus.svg" alt="">
+                  </button> -->
                 </div>
               </div>
               <div class="card__line"></div>

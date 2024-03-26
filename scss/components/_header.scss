@@ -68,7 +68,7 @@
   }
 
   ::-webkit-input-placeholder {
-    color: #828ead;
+    color: $textColorFooter;
   }
 }
 
@@ -114,26 +114,25 @@ input[type="text"]:disabled::-webkit-input-placeholder {
 }
 
 .header__basket {
+  @include gothamBoldFontAndSize;
+  @include styleHeader;
+  border: none;
   padding: 12px 24px;
   min-width: 148px;
   background-color: $bgColorLightBlue;
   border-radius: 8px;
-}
-
-.header__price {
-  @include styleHeader;
   position: relative;
   color: $bgBtn;
   gap: 8px;
   white-space: nowrap;
-  @include gothamBoldFontAndSize;
 }
+
 
 .header__ruble {
   position: absolute;
-  top: 53%;
+  top: 52%;
   transform: translateY(-50%);
-  right: 6px;
+  right: 26px;
   @include gothamBoldFontAndSize;
   line-height: 5px;
 	width: 5px;
