@@ -1,9 +1,9 @@
 let i = 0;
 let image = document.getElementById("image");
-let imgs = ["./resources/main/heart.svg", "./resources/header/redHeart.svg"];
+let images = ["./resources/main/heart.svg", "./resources/header/redHeart.svg"];
 
-image.addEventListener("click", function imgsrc() {
+image.addEventListener("click", () => {
   i++;
-  i %= imgs.length;
-  image.src = imgs[i];
+  i %= images.length;
+  image.src = images[i];
 });

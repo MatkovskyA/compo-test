@@ -60,9 +60,14 @@ img {
   align-items: center;
   padding: 16px 0;
 }
+.header__menu span {
+  font-family: "Gotham-Bold";
+  font-size: 14px;
+}
 
 .header__input {
   width: 100%;
+  font-family: "GothamPro";
 }
 
 .header__btn {
@@ -97,7 +102,21 @@ img {
   border: 1px solid #1551E5;
 }
 .header__search ::-webkit-input-placeholder {
-  color: #050d23;
+  color: #828ead;
+}
+
+.header__input:hover {
+  color: #828ead;
+  opacity: 0.6;
+}
+
+input[type=text]:disabled {
+  background: #f2f5f9;
+  border: none;
+}
+
+input[type=text]:disabled::-webkit-input-placeholder {
+  color: #b2bace;
 }
 
 .header__btns {
@@ -129,10 +148,7 @@ img {
 }
 
 .header__basket {
-  display: flex;
-  align-items: center;
   padding: 12px 24px;
-  gap: 12px;
   min-width: 148px;
   background-color: #F2F6FF;
   border-radius: 8px;
@@ -141,9 +157,25 @@ img {
 .header__price {
   display: flex;
   align-items: center;
+  position: relative;
   color: #1551E5;
   gap: 8px;
   white-space: nowrap;
+  font-family: "Gotham-Bold";
+  font-size: 14px;
+}
+
+.header__ruble {
+  position: absolute;
+  top: 53%;
+  transform: translateY(-50%);
+  right: 6px;
+  font-family: "Gotham-Bold";
+  font-size: 14px;
+  line-height: 5px;
+  width: 5px;
+  border-bottom: 1.5px solid #1551E5;
+  display: inline-block;
 }
 
 .header__account {
@@ -156,6 +188,7 @@ img {
 .header__account-name {
   white-space: nowrap;
   font-size: 14px;
+  font-family: "GothamPro";
 }
 
 .nav {
@@ -175,6 +208,8 @@ img {
   color: #071435;
   font-size: 14px;
   line-height: 16px;
+  font-family: "GothamPro";
+  font-size: 14px;
 }
 
 .nav__items {
@@ -192,6 +227,8 @@ img {
   background-color: #F2F6FF;
   color: #1551E5;
   border-radius: 8px;
+  font-family: "GothamPro";
+  font-size: 14px;
 }
 
 .nav__link-promo {
@@ -199,10 +236,14 @@ img {
   align-items: center;
   gap: 16px;
   color: #1551E5;
+  font-family: "GothamPro";
+  font-size: 14px;
 }
 
 .nav__link-blog {
   color: #1551E5;
+  font-family: "GothamPro";
+  font-size: 14px;
 }
 
 .card__links {
@@ -211,10 +252,17 @@ img {
 
 .card__link {
   color: #828EAD;
+  font-family: "Gotham-Book";
+  font-size: 12px;
 }
 
 .card__title {
   margin-bottom: 32px;
+  font-family: "GothamPro";
+  text-transform: uppercase;
+}
+.card__title h1 {
+  font-size: 32px;
 }
 
 .card__about {
@@ -256,7 +304,7 @@ img {
 
 .wrapper {
   display: flex;
-  gap: 12px;
+  gap: 42px;
   align-items: center;
   margin-bottom: 32px;
 }
@@ -264,11 +312,28 @@ img {
 .card__fullPrice {
   margin-bottom: 24px;
   color: #FF3D71;
+  font-family: "GothamPro";
+  font-size: 14px;
 }
 
 .card__price {
-  font-size: 32px;
+  position: relative;
   line-height: 48px;
+  font-family: "Gotham-Bold";
+  font-size: 32px;
+  color: #071435;
+}
+.card__price .card__ruble {
+  color: #071435;
+  position: absolute;
+  top: 52%;
+  transform: translateY(-50%);
+  right: -20px;
+  font-family: "Gotham-Bold";
+  font-size: 32px;
+  line-height: 13px;
+  width: 13px;
+  border-bottom: 3px solid #071435;
 }
 
 .card__sale {
@@ -276,6 +341,7 @@ img {
   background-color: #FF3D71;
   color: white;
   border-radius: 4px;
+  font-family: "Gotham-Bold";
 }
 
 .card__boxes {
@@ -284,6 +350,8 @@ img {
   background-color: #f2f5f9;
   border-radius: 8px;
   line-height: 16px;
+  font-family: "Gotham-Bold";
+  font-size: 14px;
 }
 
 .card__checkbox {
@@ -302,6 +370,7 @@ img {
   position: relative;
   font-size: 18px;
   line-height: 16px;
+  font-family: "GothamPro";
 }
 
 .card__checkBtn::before {
@@ -336,11 +405,27 @@ img {
   left: -50px;
 }
 
-.card__delivery {
+.delivery {
   padding-top: 32px;
   display: flex;
   gap: 16px;
   margin-bottom: 32px;
+}
+
+.delivery__info {
+  min-width: 113px;
+  display: flex;
+  flex-direction: column;
+}
+.delivery__info p {
+  font-family: "Gotham-Bold";
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.delivery__info span {
+  font-family: "Gotham-Book";
+  color: #828EAD;
+  font-size: 12px;
 }
 
 .card__buttons {
@@ -400,14 +485,12 @@ img {
   font-size: 14px;
   font-weight: bold;
   line-height: 16px;
-  color: #071435;
 }
 
 .description__title {
   font-size: 24px;
   line-height: 28px;
   margin-bottom: 24px;
-  color: #071435;
 }
 
 .description__text {
@@ -543,8 +626,26 @@ img {
   font-family: "GothamPro";
   src: url(../resources/fonts/GothaProMed.otf) format("opentype");
 }
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url(../resources/fonts/Gotham-Bold.otf) format("opentype");
+}
+@font-face {
+  font-family: "Gotham-Book";
+  src: url(../resources/fonts/Gotham-Book.otf) format("opentype");
+}
+@font-face {
+  font-family: "Gotham-Medium";
+  src: url(../resources/fonts/Gotham-Medium.otf) format("opentype");
+}
+@font-face {
+  font-family: "rouble";
+  src: url("../resources/fonts/rouble-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
-  font-family: "GothamPro", Georgia, "Times New Roman", Times, serif;
+  color: #071435;
 }
 
 .container {

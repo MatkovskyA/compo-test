@@ -11,8 +11,30 @@
   src: url(../resources/fonts/GothaProMed.otf) format("opentype");
 }
 
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url(../resources/fonts/Gotham-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Gotham-Book";
+  src: url(../resources/fonts/Gotham-Book.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Gotham-Medium";
+  src: url(../resources/fonts/Gotham-Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "rouble";
+  src: url("../resources/fonts/rouble-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: "GothamPro", Georgia, "Times New Roman", Times, serif;
+  color: $darkColorText;
 }
 
 .container {

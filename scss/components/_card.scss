@@ -4,10 +4,18 @@
 
 .card__link {
   color: $grayColorText;
+  font-family: "Gotham-Book";
+  font-size: 12px;
 }
 
 .card__title {
   margin-bottom: 32px;
+  font-family: "GothamPro";
+  text-transform: uppercase;
+
+  h1 {
+    font-size: 32px;
+  }
 }
 
 .card__about {
@@ -49,7 +57,7 @@
 
 .wrapper {
   display: flex;
-  gap: 12px;
+  gap: 42px;
   align-items: center;
   margin-bottom: 32px;
 }
@@ -57,11 +65,29 @@
 .card__fullPrice {
   margin-bottom: 24px;
   color: $redColorText;
+  font-family: "GothamPro";
+  font-size: 14px;
 }
 
 .card__price {
-  font-size: 32px;
+  position: relative;
   line-height: 48px;
+  font-family: "Gotham-Bold";
+  font-size: 32px;
+  color: #071435;
+
+  .card__ruble {
+    color: #071435;
+    position: absolute;
+    top: 52%;
+    transform: translateY(-50%);
+    right: -20px;
+    font-family: "Gotham-Bold";
+    font-size: 32px;
+    line-height: 13px;
+    width: 13px;
+    border-bottom: 3px solid #071435;
+  }
 }
 
 .card__sale {
@@ -69,6 +95,7 @@
   background-color: $redColorText;
   color: white;
   border-radius: 4px;
+  font-family: "Gotham-Bold";
 }
 
 .card__boxes {
@@ -77,6 +104,8 @@
   background-color: #f2f5f9;
   border-radius: 8px;
   line-height: 16px;
+  font-family: "Gotham-Bold";
+  font-size: 14px;
 }
 
 .card__checkbox {
@@ -95,6 +124,7 @@
   position: relative;
   font-size: 18px;
   line-height: 16px;
+  font-family: "GothamPro";
 }
 
 .card__checkBtn::before {
@@ -129,11 +159,30 @@
   left: -50px;
 }
 
-.card__delivery {
+.delivery {
   padding-top: 32px;
   display: flex;
   gap: 16px;
   margin-bottom: 32px;
+  
+}
+
+.delivery__info {
+  min-width: 113px;
+  display: flex;
+  flex-direction: column;
+
+  p {
+    font-family: "Gotham-Bold";
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  span {
+    font-family: "Gotham-Book";
+    color: $checkBoxColor;
+    font-size: 12px;
+  }
 }
 
 .card__buttons {
@@ -193,14 +242,12 @@
   font-size: 14px;
   font-weight: bold;
   line-height: 16px;
-  color: $darkColorText;
 }
 
 .description__title {
   font-size: 24px;
   line-height: 28px;
   margin-bottom: 24px;
-  color: $darkColorText;
 }
 
 .description__text {

@@ -24,10 +24,15 @@
 .header__menu {
   @include styleHeader;
   padding: 16px 0;
+
+  span {
+    @include gothamBoldFontAndSize;
+  }
 }
 
 .header__input {
   width: 100%;
+  font-family: "GothamPro";
 }
 
 .header__btn {
@@ -38,6 +43,7 @@
   border-radius: 8px;
   background-color: $bgBtn;
   color: $colorTextBtn;
+
   span {
     padding-right: 24px;
   }
@@ -62,13 +68,23 @@
   }
 
   ::-webkit-input-placeholder {
-    color: #050d23;
+    color: #828ead;
   }
 }
 
-// .header__search:focus {
-//   border: 1px solid $bgBtn;
-// }
+.header__input:hover {
+  color: #828ead;
+  opacity: 0.6;
+}
+
+input[type="text"]:disabled {
+  background: #f2f5f9;
+  border: none;
+}
+
+input[type="text"]:disabled::-webkit-input-placeholder {
+  color: #b2bace;
+}
 
 .header__btns {
   @include styleHeader;
@@ -98,9 +114,7 @@
 }
 
 .header__basket {
-  @include styleHeader;
   padding: 12px 24px;
-  gap: 12px;
   min-width: 148px;
   background-color: $bgColorLightBlue;
   border-radius: 8px;
@@ -108,9 +122,23 @@
 
 .header__price {
   @include styleHeader;
+  position: relative;
   color: $bgBtn;
   gap: 8px;
   white-space: nowrap;
+  @include gothamBoldFontAndSize;
+}
+
+.header__ruble {
+  position: absolute;
+  top: 53%;
+  transform: translateY(-50%);
+  right: 6px;
+  @include gothamBoldFontAndSize;
+  line-height: 5px;
+	width: 5px;
+	border-bottom: 1.5px solid $bgBtn;; 
+	display: inline-block;
 }
 
 .header__account {
@@ -122,6 +150,5 @@
 .header__account-name {
   white-space: nowrap;
   font-size: 14px;
+  font-family: "GothamPro";
 }
-
-
