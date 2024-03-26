@@ -4,13 +4,16 @@
   padding: 48px 0;
   border-bottom: 1px solid $colorBorder;
 }
+
 .footer__contacts {
   @include styleHeader;
   gap: 48px;
 }
+
 .footer__logo {
   margin-right: 56px;
 }
+
 .footer__contact {
   display: flex;
   flex-direction: column;
@@ -18,15 +21,17 @@
 }
 
 .footer__contact-color {
+  font-family: "Gotham-Bold";
   font-size: 16px;
   font-weight: bold;
-  color: $darkColorText;
+  color: $textColorFooter;
 }
 
 .footer__contact-weight {
   font-size: 12px;
   line-height: 16px;
-  color: $grayColorText;
+  color: $textColorFooter;
+  font-family: "Gotham-Book";
 }
 
 .footer__links {
@@ -34,15 +39,20 @@
   gap: 32px;
   align-items: center;
 }
+
 .footer__link-color {
   color: $darkColorText;
+  font-family: "Gotham-Bold";
 }
+
 .footer__btn {
   padding: 16px 24px;
   border: none;
   background-color: $bgColorLightBlue;
   color: $bgBtn;
   border-radius: 8px;
+  font-family: "Gotham-Book";
+  font-size: 14px;
 }
 
 .footer__items {
@@ -56,7 +66,9 @@
   min-width: 370px;
   ul li {
     padding-bottom: 16px;
-
+    font-family: "Gotham-Book";
+    font-size: 14px;
+    color: $textColorFooter;
     a {
       color: $darkColorText;
       font-size: 14px;
@@ -88,21 +100,29 @@
 .footer__politic {
   text-align: center;
   margin-bottom: 40px;
+  font-family: "Gotham-Book";
+  font-size: 12px;
 }
 
 .footer__develop {
   @include styleHeader;
   justify-content: center;
   gap: 24px;
-  
+  font-family: "Gotham-Bold";
+  font-size: 14px;
+  a {
+    @include styleHeader;
+  }
 }
 
 .footer__info-link {
+  font-family: "Gotham-Medium";
+  font-size: 12px;
   @include styleHeader;
   gap: 8px;
 }
 
-.footer__info-link-color {
+.color {
   @include styleHeader;
   gap: 8px;
   color: $bgBtn !important;

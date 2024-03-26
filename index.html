@@ -72,7 +72,17 @@
         </div>
         <div class="card__about">
           <div class="card__img">
-            <img src="./resources/main/Rectangle.png" alt="Shoes">
+            <img class="card__img-title" src="./resources/main/Rectangle.png" alt="Shoes">
+            <div class="slider">
+              <button class="slider__btn-prev"><img src="./resources/main/Icon.svg" alt=""></button>
+              <div class="slider__items">
+                <img src="./resources/main/Rectangle1.png" alt="">
+                <img src="./resources/main/Rectangle2.png" alt="">
+                <img src="./resources/main/Rectangle3.png" alt="">
+                <img src="./resources/main/Rectangle4.png" alt="">
+              </div>
+              <button class="slider__btn-next"><img src="./resources/main/Icon.svg" alt=""></button>
+            </div>
           </div>
           <div class="wrapper__content">
             <div class="wrapper__inner">
@@ -105,11 +115,11 @@
                     </div>
                   </div>
                   <div class="card__buttons">
-                    <button class="card__btn-basket shadow">
+                    <button class="card__buttons-basket shadow" id="basket-btn">
                       <img src="./resources/main/basket.svg" alt="Basket">
                       <span>В корзину</span>
                     </button>
-                    <button class="card__btn-heart lightShadow">
+                    <button class="card__buttons-heart lightShadow">
                       <img id="image" src="./resources/main/heart.svg" alt="Like">
                     </button>
                   </div>
@@ -245,18 +255,18 @@
       </div>
       <div class="footer__additionally">
         <div class="footer__info">
-          <a class="footer__info-link" href=""><img src="./resources/footer/doc.svg" alt="icon"> PDF презентация</a>
-          <a class="footer__info-link" href=""><img src="./resources/footer/youtube.svg" alt="Video-icon"> Видео инструкция</a>
-          <a class="footer__info-link" href=""><img src="./resources/footer/Icon.svg" alt="Icon"> FAQ</a>
-          <a class="footer__info-link-color" href=""><img src="./resources/footer/youtubeb.svg" alt=""> Мы на YouTube</a>
-          <a href="">Политика конфиденциальности</a>
-          <a href="">Лицензионное соглашение</a>
+          <a class="footer__info-link" href="#!"><img src="./resources/footer/doc.svg" alt="icon"> PDF презентация</a>
+          <a class="footer__info-link" href="#!"><img src="./resources/footer/youtube.svg" alt="Video-icon"> Видео инструкция</a>
+          <a class="footer__info-link" href="#!"><img src="./resources/footer/Icon.svg" alt="Icon"> FAQ</a>
+          <a class="footer__info-link color" href="#!"><img src="./resources/footer/youtubeb.svg" alt=""> Мы на YouTube</a>
+          <a class="footer__info-link" href="#!">Политика конфиденциальности</a>
+          <a class="footer__info-link" href="#!">Лицензионное соглашение</a>
         </div>
         <div class="footer__politic">
           <p>Настоящая Политика обработки персональных данных разработана в соответствии с Конституцией Российской Федерации, Трудовым кодексом Российской Федерации, Гражданским кодексом Российской Федерации, Федеральным законом от 27 июля 2006 года 149-ФЗ "Об информации, информационных технологиях и о защите информации",</p>
         </div>
         <div class="footer__develop">
-          <img src="./resources/footer/BrandGray.svg" alt="Logotype">
+          <a href="#!"><img src="./resources/footer/BrandGray.svg" alt="Logotype"></a>
           <a href="#!">Разработка платформы</a>
         </div>
       </div>

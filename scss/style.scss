@@ -4,6 +4,7 @@
 @import "components/header";
 @import "components/nav";
 @import "components/card";
+@import "components/cardSlider";
 @import "components/footer";
 
 @font-face {
@@ -54,6 +55,12 @@ a {
 a:hover {
   cursor: pointer;
   scale: 1.05;
+}
+
+h4 {
+  font-family: "Gotham-Medium";
+  color: $textColorFooter;
+  line-height: 24px;
 }
 
 button:hover {
