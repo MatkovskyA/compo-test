@@ -77,6 +77,10 @@
   }
 }
 
+.footer__content ul li:hover {
+  scale: 1.05;
+}
+
 .footer__title {
   margin-bottom: 24px;
 }
@@ -84,9 +88,8 @@
 .footer__additionally {
   padding: 48px 0;
   color: $grayColorText;
-
   a {
-    color: $grayColorText;
+    color: #828ead;
   }
 }
 

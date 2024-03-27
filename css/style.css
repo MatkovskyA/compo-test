@@ -145,6 +145,10 @@ input[type=text]:disabled::-webkit-input-placeholder {
   min-width: 32px;
 }
 
+.header__icon-color img:hover {
+  scale: 1.05;
+}
+
 .header__line {
   width: 1px;
   height: 48px;
@@ -652,6 +656,10 @@ input[type=text]:disabled::-webkit-input-placeholder {
   font-size: 14px;
 }
 
+.footer__content ul li:hover {
+  scale: 1.05;
+}
+
 .footer__title {
   margin-bottom: 24px;
 }
@@ -661,7 +669,7 @@ input[type=text]:disabled::-webkit-input-placeholder {
   color: #828EAD;
 }
 .footer__additionally a {
-  color: #828EAD;
+  color: #828ead;
 }
 
 .footer__info {

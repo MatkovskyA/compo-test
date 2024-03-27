@@ -111,6 +111,10 @@ input[type="text"]:disabled::-webkit-input-placeholder {
   }
 }
 
+.header__icon-color img:hover {
+  scale: 1.05;
+}
+
 .header__line {
   width: 1px;
   height: 48px;
@@ -131,7 +135,6 @@ input[type="text"]:disabled::-webkit-input-placeholder {
   white-space: nowrap;
 }
 
-
 .header__ruble {
   position: absolute;
   top: 52%;
@@ -139,9 +142,9 @@ input[type="text"]:disabled::-webkit-input-placeholder {
   right: 26px;
   @include gothamBoldFontAndSize;
   line-height: 5px;
-	width: 5px;
-	border-bottom: 1.5px solid $bgBtn;; 
-	display: inline-block;
+  width: 5px;
+  border-bottom: 1.5px solid $bgBtn;
+  display: inline-block;
 }
 
 .header__account {
