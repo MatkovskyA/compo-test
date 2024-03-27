@@ -267,9 +267,6 @@ input[type=text]:disabled::-webkit-input-placeholder {
   font-family: "GothamPro";
   text-transform: uppercase;
 }
-.card__title h1 {
-  font-size: 32px;
-}
 
 .card__about {
   display: flex;
@@ -310,7 +307,7 @@ input[type=text]:disabled::-webkit-input-placeholder {
   border-bottom: 1px solid #E2E4F0;
 }
 
-.wrapper {
+.wrapper__price {
   display: flex;
   gap: 42px;
   align-items: center;
@@ -739,6 +736,10 @@ body {
   max-width: 1680px;
   margin: 0 auto;
   padding: 0 24px;
+}
+
+h1 {
+  font-size: 32px;
 }
 
 .shadow:hover {

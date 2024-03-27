@@ -12,10 +12,6 @@
   margin-bottom: 32px;
   font-family: "GothamPro";
   text-transform: uppercase;
-
-  h1 {
-    font-size: 32px;
-  }
 }
 
 .card__about {
@@ -57,7 +53,7 @@
   border-bottom: 1px solid $colorBorder;
 }
 
-.wrapper {
+.wrapper__price {
   display: flex;
   gap: 42px;
   align-items: center;
