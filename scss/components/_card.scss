@@ -208,6 +208,10 @@
   font-size: 14px;
 }
 
+.card__buttons-basket:hover {
+  background-color: $bgColorBtnHover;
+}
+
 .card__buttons-hidden {
   display: none;
 }

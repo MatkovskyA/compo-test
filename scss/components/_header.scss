@@ -49,6 +49,10 @@
   }
 }
 
+.header__btn:hover {
+  background-color: $bgColorBtnHover;
+}
+
 .header__search {
   width: 100%;
   @include styleHeader;

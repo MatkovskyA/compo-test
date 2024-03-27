@@ -84,6 +84,10 @@ img {
   padding-right: 24px;
 }
 
+.header__btn:hover {
+  background-color: #316CFF;
+}
+
 .header__search {
   width: 100%;
   display: flex;
@@ -450,6 +454,10 @@ input[type=text]:disabled::-webkit-input-placeholder {
   font-size: 14px;
 }
 
+.card__buttons-basket:hover {
+  background-color: #316CFF;
+}
+
 .card__buttons-hidden {
   display: none;
 }
@@ -715,18 +723,12 @@ input[type=text]:disabled::-webkit-input-placeholder {
   font-family: "Gotham-Medium";
   src: url(../resources/fonts/Gotham-Medium.otf) format("opentype");
 }
-@font-face {
-  font-family: "rouble";
-  src: url("../resources/fonts/rouble-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 body {
   color: #071435;
 }
 
 .container {
-  max-width: 1600px;
+  max-width: 1680px;
   margin: 0 auto;
   padding: 0 24px;
 }
